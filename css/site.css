@@ -1,0 +1,20 @@
+/* START: Sticky Footer CSS */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* END: Sticky Footer CSS */
