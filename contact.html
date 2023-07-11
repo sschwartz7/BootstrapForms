@@ -13,6 +13,8 @@
 
     <!-- Custom CSS -->
     <link href="/css/site.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -46,8 +48,47 @@
         </nav>
     </header>
 
-    <main class="container">
-
+    <main class="container p-2">
+        <h1 class="text-center text-light p-2">Contact Me</h1>
+        <div class="p-3 bg-light border-2 border-info border shadow-lg">
+            <div class="row">
+                <form action="#" class="row row-cols-1">
+                    <div class="col-md-6">
+                        <label for="FirstName" class="form-label">First Name</label>
+                        <input name="FirstName" type="text" id="FirstName" class="form-control" placeholder="First Name"
+                            aria-label="First Name" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="LastName" class="form-label">Last Name</label>
+                        <input name="LastName" type="text" id="LastName" class="form-control" placeholder="Last Name"
+                            aria-label="Last Name" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Email" class="form-label">Email</label>
+                        <input name="Email" type="email" id="Email" class="form-control" placeholder="Email"
+                            aria-label="Email" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Phone" class="form-label">Phone (Optional)</label>
+                        <input name="Phone" type="tel" id="Phone" class="form-control" placeholder="Phone"
+                            aria-label="Phone" />
+                    </div>
+                    <div class="col">
+                        <label for="Subject" class="form-label">Subject</label>
+                        <input name="Subject" type="text" id="Subject" class="form-control" placeholder="Subject"
+                            aria-label="Subject" required />
+                    </div>
+                    <div class="col">
+                        <label for="Message" class="form-label">Message</label>
+                        <textarea name="Message" type="text" id="Message" class="form-control" placeholder="Message"
+                            aria-label="Message" required rows="4"></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button class="btn btn-primary mt-2" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="container-fluid bg-dark py-3 text-light text">

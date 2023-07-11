@@ -13,11 +13,14 @@
 
     <!-- Custom CSS -->
     <link href="/css/site.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link href="/css/Invoice.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+    <header class="d-print-none">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">BS Forms</a>
@@ -46,11 +49,89 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container mt-3">
+        <div class="row border-bottom align-items-center">
+            <div class="col-sm-7 col-12"><img src="/img/IdeaFoundryLogo.svg" class="img-fluid" /></div>
+            <div class="col-sm-5 text-end col-12"><strong>Customer:</strong> 4908</div>
+        </div>
+        <div class="row border-bottom align-items-center row-cols-1">
+            <div class="col-md-6"><b>Date:</b> 05/12/2019</div>
+            <div class="col-md-6 text-md-end"><b>Invoice No:</b> 19005</div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <b>Invoice To:</b>
+                <address>Mark Davis<br />
+                    3333 Al Davis Way<br />
+                    Las Vegas, NV 89118</address>
+            </div>
+            <div class="col-6 text-end">
+                <b>Pay To:</b>
+                <address>Idea Foundry, Inc.<br>
+                    2705 N. Enterprise St.<br>
+                    Kernersville, NC 27284</address>
+            </div>
+        </div>
+        <div class="table-responsive row">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Rate</th>
+                    <th>QTY</th>
+                    <th class="text-end">Amount</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Design</td>
+                        <td>Website Design</td>
+                        <td>$60.00</td>
+                        <td>10</td>
+                        <td class="text-end">$600.00</td>
+                    </tr>
+                    <tr>
+                        <td>Development</td>
+                        <td>Website Development</td>
+                        <td>$150.00</td>
+                        <td>10</td>
+                        <td class="text-end">$1500.00</td>
 
+                    </tr>
+                    <tr>
+                        <td>Deployment</td>
+                        <td>Deployment and Hosting</td>
+                        <td>$450.00</td>
+                        <td>1</td>
+                        <td class="text-end">$450.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Sub Total:</td>
+                        <td class="text-end">$2,550.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Tax:</td>
+                        <td class="text-end">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total:</td>
+                        <td class="text-end">$2,550.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="row">
+            <p><b>NOTE: </b> This is a compuer generated receipt and does not require physical signature.</p>
+        </div>
+        <div class="text-center d-print-none">
+            <button class="btn btn-dark" onclick="window.print()">
+                Print
+            </button>
+        </div>
     </main>
 
-    <footer class="container-fluid bg-dark py-3 text-light text">
+    <footer class="container-fluid bg-dark py-3 text-light text d-print-none">
         <div class="row row-cols-1 row-cols-md-3">
             <div class="col">
                 Built by Simon
